@@ -102,12 +102,19 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    // project.ext.react = [
+    // enableHermes: false,  // (set to true for enabling Hermes)
+    // ]
+
+    // apply from: "../../node_modules/react-native/react.gradle"
+
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
     implementation("com.facebook.react:react-android")
     implementation("com.facebook.react:flipper-integration")
+    //implementation fileTree(dir: "src/main/libs", include: ["*.jar"])
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")

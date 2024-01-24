@@ -98,6 +98,7 @@ export const styles = StyleSheet.create({
         fontSize: 22,
         padding: 20,
         textAlign: 'center',
-        fontWeight: '500'
+        fontWeight: '500',
+        color: 'black'
     }
 });
